@@ -1,0 +1,125 @@
+body{
+
+    margin: 0px;
+}
+header{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+}
+.container{
+    height: 100vh;
+    background-color: bisque;
+    display: flex;  
+}
+
+.projects{
+background-color: gray;
+   flex-grow: 0.5;
+
+   display: flex;
+   flex-direction: column;
+   
+}
+.projects .title{
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+.projects ul{
+   padding: 0px;
+} 
+.projects li{
+    padding: 5px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    transition: background-color 0.5s ease-out 0.3ms
+}
+.projects li:hover{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.projects .active{
+    background-color: green;
+    border-left-style: solid;
+    border-left-color: coral;
+    padding-left: 30px;
+    border-width: 10px;
+}
+.projects li img{
+    height: 30px;
+}
+#add{
+    margin: 40px;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out 0.2ms;
+    border-radius: 5px;
+}
+#add:hover{
+    background-color: aqua;
+    
+}
+
+
+
+.todos{
+    background-color: brown;
+    flex-grow: 5;
+    
+}
+.todos .title{
+    font-size: 30px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item{
+    margin: 40px;
+    padding: 20px;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.details{
+    margin-left: 50px;
+    
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out 0.2ms;
+    border-radius: 5px;
+}
+.details:hover{
+    background-color: aquamarine;
+}
+
+/* copyrights */
+footer{
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+footer img{
+    height: 30px;
+}
