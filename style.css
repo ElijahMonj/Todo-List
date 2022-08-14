@@ -1,24 +1,45 @@
+button{
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Secular One', sans-serif;
+}
 body{
-
+    color: #2C3333;
     margin: 0px;
+    font-family: 'Advent Pro', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Secular One', sans-serif;
 }
 header{
-    background-color: blueviolet;
+    background-color: #2C3333;
     text-align: center;
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 64px;
+    color: #E7F6F2;
+}
+header img{
+    width: 60px;
+    margin-right: 20px;
 }
 .container{
     height: 100vh;
-    background-color: bisque;
+    background-color: black;
     display: flex;  
 }
 
 .projects{
-background-color: gray;
+background-color: #A5C9CA;
    flex-grow: 0.5;
 
    display: flex;
@@ -39,18 +60,27 @@ background-color: gray;
     align-items: center;
     justify-content: space-between;
     font-size: 25px;
-    transition: background-color 0.5s ease-out 0.3ms
+    transition: background-color 0.3s ease-out 0.3ms
+}
+.projects img{
+    filter: invert(87%) sepia(11%) saturate(473%) hue-rotate(133deg) brightness(87%) contrast(94%);
+    transition: transform .2s;
+}
+.projects img:hover{
+    transform: scale(1.2); 
 }
 .projects li:hover{
-    background-color: lightgreen;
+    background-color: #395B64;
     cursor: pointer;
+    color: #E7F6F2;
 }
 .projects .active{
-    background-color: green;
+    background-color: #395B64;
     border-left-style: solid;
-    border-left-color: coral;
+    border-left-color: #2C3333;
     padding-left: 30px;
     border-width: 10px;
+    color: #E7F6F2;
 }
 .projects li img{
     height: 30px;
@@ -66,17 +96,24 @@ background-color: gray;
     border-radius: 5px;
 }
 #add:hover{
-    background-color: aqua;
-    
+    background-color: #395B64;
+    color: #E7F6F2;
 }
 
 
 
 .todos{
-    background-color: brown;
+    background-color:#E7F6F2;
     flex-grow: 5;
-    
 }
+.todos img{
+    filter: invert(14%) sepia(17%) saturate(346%) hue-rotate(132deg) brightness(104%) contrast(87%);
+    transition: transform .3s ease-in-out;
+}
+.todos img:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+  }
 .todos .title{
     font-size: 30px;
     margin: 40px;
@@ -87,7 +124,7 @@ background-color: gray;
 .list-item{
     margin: 40px;
     padding: 20px;
-    background-color: burlywood;
+    background-color: #A5C9CA;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,15 +142,17 @@ background-color: gray;
     cursor: pointer;
     transition: background-color 0.3s ease-out 0.2ms;
     border-radius: 5px;
+    background-color: #E7F6F2;
 }
 .details:hover{
-    background-color: aquamarine;
+    background-color: #2C3333;
+    color: #E7F6F2;
 }
 
 /* copyrights */
 footer{
-    background-color: black;
-    color: white;
+    background-color: #2C3333;
+    color: #E7F6F2;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -122,4 +161,9 @@ footer{
 }
 footer img{
     height: 30px;
+    transition: transform .3s ease-in-out;
+}
+footer img:hover{
+    cursor: pointer;
+    transform: scale(1.2); 
 }
