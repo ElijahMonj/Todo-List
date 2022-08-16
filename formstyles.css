@@ -23,7 +23,7 @@
     margin-left: -180px;
     border-radius: 10px;
 }
-.add-project-form button{
+.add-project-form button,#add-note button{
    
     text-align: center;
     padding: 10px;
@@ -34,7 +34,7 @@
     border-radius: 5px;
     background-color: #E7F6F2;
 }
-.add-project-form button:hover{
+.add-project-form button:hover,#add-note button:hover{
     background-color: #2C3333;
     color: #E7F6F2;
 }
@@ -48,8 +48,66 @@
     border-radius: 5px;
     border: none;
     color: #2C3333;
+    font-family: 'Advent Pro', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Secular One', sans-serif;
 }
-.add-project-form input:focus{
+input:focus,select:focus,textarea:focus{
     outline: none;
     background-color: #E7F6F2;
 }   
+
+
+#add-note{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #E7F6F2;
+    padding: 40px;
+    background-color: #395B64;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 15px;
+    margin-top: -250px;
+    margin-left: -390px;
+    width: 700px;
+    height: 500px;
+    border-radius: 5px;
+}
+ #description{
+    height: 200px;
+    font-size: 20px;
+    resize: none;
+}
+#add-note label,#add-note input, select,textarea{
+    font-family: 'Advent Pro', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+#add-note-title{
+    font-size: 30px;
+}
+.add-cancel{
+   display: flex;
+   justify-content: space-evenly;
+}
+#add-note button{
+    font-size: 18px;
+    width: 200px;
+    margin: 10px;
+}
