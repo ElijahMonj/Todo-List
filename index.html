@@ -4,14 +4,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Cairo:wght@200;300;400&family=Ibarra+Real+Nova&family=Nunito:wght@200;400&family=Patrick+Hand&family=Roboto+Mono&family=Secular+One&display=swap" rel="stylesheet">
-     
+    <script src="script.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formstyles.css">
     <link rel="icon" type="image/x-icon" href="src/logo.svg">
       <title>Todo-List</title>
 </head>
+    
 <body>
     <header>
         <img src="src/logo.svg" alt="">
@@ -30,7 +32,7 @@
                     <img src="src/remove.svg" alt="">
                 </li>
             </ul>
-            <button id="add">Add new Project</button>
+            <button id="add" onclick="showAddProject()">Add new Project</button>
         </div>
         <div class="todos">
             <div class="title">
@@ -46,9 +48,22 @@
             </div>
         </div>
     </div>
+   
+   
+    <div id="cover">
+        <form class="add-project-form" id="add-project-form">
+            <label for="name">Project Name:</label>
+            <input type="text" id="name" value="New Project">
+            <button>Add Project</button>
+            <button onclick="hideAddProject()">Cancel</button>
+        </form>
+        <form class="add-note">
+        </form>
+    </div>
     <footer>
         <div>Copyrights</div>
         <img src="gh.png" alt="">
     </footer>
+   
 </body>
 </html>

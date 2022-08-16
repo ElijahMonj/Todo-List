@@ -68,6 +68,7 @@ background-color: #A5C9CA;
 }
 .projects img:hover{
     transform: scale(1.2); 
+    filter: invert(97%) sepia(3%) saturate(837%) hue-rotate(92deg) brightness(104%) contrast(93%);
 }
 .projects li:hover{
     background-color: #395B64;
