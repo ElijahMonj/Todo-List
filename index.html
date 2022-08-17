@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Cairo:wght@200;300;400&family=Ibarra+Real+Nova&family=Nunito:wght@200;400&family=Patrick+Hand&family=Roboto+Mono&family=Secular+One&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
+    <script src="object.js" defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,15 +23,8 @@
     <div class="container">
         <div class="projects">
             <div class="title">Your Projects</div>
-            <ul class="projectlist">
-                <li class="active">
-                    <div class="projectname">Default</div>
-                    <img src="src/remove.svg" alt="">
-                </li>
-                <li>
-                    <div class="projectname">Defasdfasf</div>
-                    <img src="src/remove.svg" alt="">
-                </li>
+            <ul class="projectlist" class="projectlist">
+                
             </ul>
             <button id="add" onclick="showAddProject()">Add new Project</button>
         </div>
@@ -40,11 +34,15 @@
                 <img src="src/add.svg" alt="" onclick="showAddNote()">
             </div>
             <div class="todolist">
+                <!-- 
                 <div class="list-item">
-                    <div class="todo-title">Start Writing!</div>
-                    <div class="duedate">xx/xx/xxxx<button class="details">Details</button></div>           
+                   <div class="todo-title">Start Writing!</div>
+                    <div class="duedate">xx/xx/xxxx
+                        <button class="details">view note</button>
+                        <button class="details">Delete note</button>
+                    </div>          
                 </div>
-                
+                -->
             </div>
         </div>
     </div>
@@ -53,8 +51,8 @@
     <div id="cover">
         <form class="add-project-form" id="add-project-form" action="javascript:void(0);">
             <label for="name">Project Name:</label>
-            <input type="text" id="name" value="New Project">
-            <button>Add Project</button>
+            <input type="text" id="name" value="New Project" minlength="1">
+            <button onclick="addNewProject()">Add Project</button>
             <button onclick="hideAddProject()">Cancel</button>
         </form>
         <form id="add-note" action="javascript:void(0);">
@@ -79,6 +77,9 @@
                 <button onclick="hideAddNote()">Cancel</button>
             </div>
         </form>
+        <div class="view-todo-detais" id="view-todo-detais">
+            
+        </div>
     </div>
     
     <footer>
