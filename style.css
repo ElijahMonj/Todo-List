@@ -40,7 +40,7 @@ header img{
 
 .projects{
 background-color: #A5C9CA;
-   flex-grow: 0.5;
+   
 
    display: flex;
    flex-direction: column;
@@ -63,6 +63,7 @@ background-color: #A5C9CA;
     transition: background-color 0.3s ease-out 0.3ms
 }
 .projects img{
+    margin-left: 10px;
     filter: invert(87%) sepia(11%) saturate(473%) hue-rotate(133deg) brightness(87%) contrast(94%);
     transition: transform .2s;
 }
@@ -136,7 +137,7 @@ background-color: #A5C9CA;
     font-size: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.details{
+.details,.deleteBtn{
     margin-left: 50px;
     
     text-align: center;
@@ -148,7 +149,7 @@ background-color: #A5C9CA;
     border-radius: 5px;
     background-color: #E7F6F2;
 }
-.details:hover{
+.details:hover,.deleteBtn:hover{
     background-color: #2C3333;
     color: #E7F6F2;
 }

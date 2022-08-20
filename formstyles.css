@@ -23,7 +23,7 @@
     margin-left: -180px;
     border-radius: 10px;
 }
-.add-project-form button,#add-note button{
+.add-project-form button,#add-note button,.delete-note{
    
     text-align: center;
     padding: 10px;
@@ -34,7 +34,7 @@
     border-radius: 5px;
     background-color: #E7F6F2;
 }
-.add-project-form button:hover,#add-note button:hover{
+.add-project-form button:hover,#add-note button:hover,.delete-note:hover{
     background-color: #2C3333;
     color: #E7F6F2;
 }
@@ -110,4 +110,37 @@ input:focus,select:focus,textarea:focus{
     font-size: 18px;
     width: 200px;
     margin: 10px;
+}
+
+
+.view-todo-details{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #E7F6F2;
+    padding: 40px;
+    background-color: #395B64;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 15px;
+    margin-top: -250px;
+    margin-left: -390px;
+    width: 700px;
+    height: 300px;
+    border-radius: 5px;  
+}
+.view-todo-title{
+    font-size: 45px;
+}
+.view-todo-close{
+    width: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    filter: invert(87%) sepia(11%) saturate(473%) hue-rotate(133deg) brightness(87%) contrast(94%);
+}
+.view-todo-close:hover{
+    cursor: pointer;
+    filter: invert(97%) sepia(3%) saturate(837%) hue-rotate(92deg) brightness(104%) contrast(93%);
 }

@@ -14,3 +14,8 @@ function hideAddNote(){
     document.getElementById("add-note").style.display = "none";
     document.getElementById("cover").style.display = "none";
 }
+function closeNote(){
+    document.getElementById("view-todo-details").style.display = "none";
+    document.getElementById("cover").style.display = "none";
+}
+document.getElementById('new-todo-duedate').valueAsDate = new Date();
